@@ -27,7 +27,11 @@
     がんばって (Ganbatte)!</p>
 
     <h2 class="text-center">Job Openings</h2>
-    <p class="text-center">All open Now !!!</p>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitems.html' %}
+        {%endfor%}
+      </div>
     <div class="text-center">
     <button class="btn btn-primary btn-lg">Contact us</button>
     <p class="text-center mt-4">Copyrights @ StarkIndustries.pvt.ltd 2025</p>
